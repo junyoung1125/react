@@ -7,6 +7,8 @@ import FunctionalComponent from "./components/FunctionalComponent";
 import ParentComponent from "./components/ParentComponent";
 import PropsComponent from "./components/PropsComponent";
 import { ContentComponent } from "./components/ContentComponent";
+import StateComponent from "./components/StateComponent";
+import LifeCycleComponent from "./components/LifeCycleComponent";
 
 /*
   날짜 : 2025/05/13
@@ -40,8 +42,10 @@ function App() {
       </ContentComponent>
 
       {/* State 컴포넌트 */}
+      <StateComponent />
 
       {/* 컴포넌트 생명주기 */}
+      <LifeCycleComponent />
     </>
   );
 }

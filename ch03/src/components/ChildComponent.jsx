@@ -9,4 +9,8 @@ export default class ChildComponent extends Component {
       </div>
     );
   }
+
+  componentWillUnmount() {
+    console.log("ChildComponent componentWillUnmount...");
+  }
 }

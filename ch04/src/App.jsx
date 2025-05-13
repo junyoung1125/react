@@ -3,6 +3,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { UseRefComponent } from "./components/UseRefComponent";
+import { UseStateComponent } from "./components/UseStateComponent";
+import { UseReducerComponent } from "./components/UseReducerComponent";
 
 /*
   날짜 : 2025/05/13
@@ -19,7 +21,11 @@ function App() {
       <UseRefComponent />
 
       {/* useState hook */}
+      <UseStateComponent />
+
       {/* useReducer hook */}
+      <UseReducerComponent />
+
       {/* useEffect hook */}
       {/* useMemo hook */}
       {/* useCallback hook */}

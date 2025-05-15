@@ -5,6 +5,7 @@ import "./App.css";
 import { ContextParentComponent } from "./components/ContextParentComponent";
 import { ContextUserComponent } from "./components/ContextUserComponent";
 import { ContextUserRegistComponent } from "./components/ContextUserRegistComponent";
+import { ReduxParentComponent } from "./components/ReduxParentComponent";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <ContextUserRegistComponent />
 
       <h4>Redux 실습</h4>
+      <ReduxParentComponent />
     </>
   );
 }

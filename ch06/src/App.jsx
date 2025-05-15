@@ -3,6 +3,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { ContextParentComponent } from "./components/ContextParentComponent";
+import { ContextUserComponent } from "./components/ContextUserComponent";
+import { ContextUserRegistComponent } from "./components/ContextUserRegistComponent";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
 
       <h4>Context API 실습</h4>
       <ContextParentComponent />
+      <ContextUserComponent />
+      <ContextUserRegistComponent />
 
       <h4>Redux 실습</h4>
     </>

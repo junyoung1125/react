@@ -30,7 +30,19 @@ export const User1List = () => {
   };
 
   // 삭제하기
-  const deleteHandler = () => {};
+  const deleteHandler = (user) => {
+    axios
+      .delete(`http://localhost:8080/ch09/user1/${user.uid}`)
+      .then((response) => {
+        console.log(response.data);
+
+        // 목록 갱신을 위해서 state 업데이트
+        setUsers(users.filter((u) => u.uid !== user.uid));
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   //prettier-ignore
   return (
@@ -54,7 +66,7 @@ export const User1List = () => {
               <td>{user.age}</td>
               <td>
                 <button onClick={()=>{modifyHandler(user)}}>수정</button>
-                <button onClick={null}>삭제</button>
+                <button onClick={()=>{deleteHandler(user)}}>삭제</button>
               </td>
             </tr>
           ))}
